@@ -4,6 +4,8 @@ Academic team project completed at the **Aristotle University of Thessaloniki, D
 
 The project evaluated the operation of a **hybrid offshore construction vessel** using **Simcenter Amesim** and MATLAB-based post-processing. The analysis covered power flows, fuel consumption, energy efficiency, CO₂ emissions, the Carbon Intensity Indicator (CII), and several design/control interventions aimed at reducing energy use and emissions.
 
+My work focused on the simulation and main engineering analysis, including MATLAB post-processing. Another team member developed the Python vessel-route visualization in the team report.
+
 ## System / Simulation Model
 
 ```mermaid
@@ -11,7 +13,7 @@ flowchart TD
     E1[Main ICE 1] --> G1[Generator 1]
     E2[Main ICE 2] --> G2[Generator 2]
     E3[Auxiliary ICE] --> G3[Generator 3]
-    G1 --> P[Electrical bus / power management]
+    G1 --> P[Power management]
     G2 --> P
     G3 --> P
     B[Battery] <--> P
@@ -73,12 +75,6 @@ Several interventions were tested against the reference configuration:
 | CII | 264.04 | 244.78 | ~7% |
 | Energy consumption | 3157.94 GJ | 2661.44 GJ | ~16% |
 
-## My Contribution
-
-My contribution focused on the simulation and the main engineering analysis. I configured and modified the provided Simcenter Amesim vessel model, ran the scenarios, and processed the exported results in MATLAB. This included power-flow, fuel, energy-efficiency, CO₂ and CII calculations, as well as the assessment of control changes, engine sizing and propeller redesign, including the combined case.
-
-The Python vessel-route visualization in the team report was developed by another team member.
-
 ## Repository Structure
 
 ```text
@@ -109,7 +105,7 @@ The Python vessel-route visualization in the team report was developed by anothe
 
 ## Reproducibility and model availability
 
-The original Simcenter Amesim base model was provided/derived from the software's marine navigation demo/library environment and is therefore **not distributed in this repository**. Amesim-generated binaries, state-machine build files, and large simulation-result packages are also excluded.
+The project used a provided Simcenter Amesim base model from the software's marine navigation demo/library environment. The model is **not distributed in this repository**. Amesim-generated binaries, state-machine build files, and large simulation-result packages are also excluded.
 
 The repository contains the MATLAB post-processing workflow and standardized weather-scenario exports. Design-case time-series exports are not included; the design summary retains the reported project results. The complete Amesim simulation cannot be rerun from this repository alone.
 
@@ -127,8 +123,8 @@ Recalculating the supplied exports gives slightly different fuel/CO₂/CII value
 | Medium | 74.28 | 234.00 | 273.32 |
 | Bad | 71.79 | 225.80 | 263.74 |
 
-The cause of these differences has not been established. The source values have not been altered to force agreement. Energy-efficiency calculations agree with the reported weather summary at its displayed precision. Resolve the fuel/emissions discrepancy against the final report and original runs before treating those summaries as exactly reproducible.
+The cause of these differences remains unresolved, and both the exports and reported summaries are retained as supplied. Energy-efficiency calculations agree with the weather summary at its displayed precision. The fuel, CO₂ and CII summaries require verification against the final report and original simulation runs.
 
 The combined design case reports approximately 16% lower simulated energy consumption and 7% lower fuel consumption, CO₂ and CII relative to the reference. These are simulation results, not measured vessel performance.
 
-The export calculations were independently checked using Python. Validation against the original report and scripts remains pending. Execution of the included scripts in MATLAB also remains unverified: the local MATLAB R2023b check was blocked at startup by a MathWorks services error (5202).
+The export calculations were checked using Python; execution of the included MATLAB scripts has not yet been verified.
