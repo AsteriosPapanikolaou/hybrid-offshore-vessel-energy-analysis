@@ -1,0 +1,4 @@
+scenario,fuel_consumption_t,co2_emissions_t,cii_g_co2_per_tonne_nm,vessel_energy_efficiency_pct,propulsion_energy_efficiency_pct
+good_weather,71.77,226.06,264.04,15.78,9.75
+medium_weather,74.24,233.86,273.15,15.5,9.68
+bad_weather,71.82,226.23,264.25,14.49,9.74

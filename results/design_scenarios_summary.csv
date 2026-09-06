@@ -1,0 +1,8 @@
+case,configuration,fuel_consumption_t,co2_emissions_t,cii_g_co2_per_tonne_nm,battery_consumption_mj_as_reported,energy_consumption_gj
+Reference (diesel),ICE 78 L; propeller 4.9 m,71.77,226.06,264.04,-333.85,3157.94
+Control strategy,Max engine electrical power 2.8 MW,68.51,215.8,252.05,165.29,3013.8
+ICE downsizing,ICE 70 L,66.85,210.58,245.96,-334.07,2940.78
+LNG scenario,LNG; ship mass increased to 7100 t,61.03,167.82,166.07,-230.86,3051.95
+SOC strategy,Initial/max SOC 90%; min SOC 50%,70.24,221.24,258.41,-333.83,3066.11
+Propeller redesign,Propeller diameter 5.5 m,68.58,216.02,252.32,-209.57,2742.89
+Combined solution,ICE 74 L; propeller 5.5 m,66.63,209.57,244.78,-209.47,2661.44

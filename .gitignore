@@ -1,0 +1,57 @@
+# Simcenter Amesim model/build artifacts
+*.ame
+*.results*
+*.sim*
+*.jac*
+*.dll
+*.exe
+*.o
+*.obj
+*.pdb
+*.state
+*.state_core
+*.tmp
+*.lock
+*.ameperf*
+*.amegp*
+*.param*
+*.ssf*
+*.pl
+*.pl.*
+*.cir
+*.cir.*
+*.make*
+*.sad
+*.sai
+*.units
+*.var
+*.vl*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.asv
+
+# Amesim-generated model reconstruction and compiled libraries
+hybrid_ocv_sea_route_.py
+*.so
+*.dylib
+*.a
+*.lib
+*.exp
+*.ilk
+
+# MATLAB generated files
+*.mex*
+*.m~
+*.slxc
+slprj/
+codegen/
+
+# Windows and editor temporary files
+Desktop.ini
+$RECYCLE.BIN/
+~$*
+*.bak
+*.swp
+*.swo
